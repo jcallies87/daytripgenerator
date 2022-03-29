@@ -14,7 +14,7 @@ while (day_trip_planner):
     while location:
         city = random_generator(list_one)
         greeting = input(f"Would you like to start your trip in {city} ? y/n ")
-        if greeting == ("y"):
+        if greeting == ("y") or ("Y"):
             break
         else:
             print("Okay lets try somewhere else?")
@@ -25,7 +25,7 @@ while (day_trip_planner):
     while resturants:
         dining = random_generator(list_one)
         where_to_eat = input(f"Would you like to have dinner at {dining} tonight ? y/n ")
-        if where_to_eat == ("y"):
+        if where_to_eat == ("y") or ("Y"):
             break
         else:
             print("Okay lets try somewhere else?")
@@ -36,7 +36,7 @@ while (day_trip_planner):
     while mode_of_transport:
         transport = random_generator(list_one)
         means_of_travel = input(f"would you like to use {transport} as your mode of transportation? y/n ")
-        if means_of_travel == ("y"):
+        if means_of_travel == ("y") or ("Y"):
             break
         else:print("Okay lets try something else")
     product_one = transport
@@ -46,7 +46,7 @@ while (day_trip_planner):
     while entertainment:
         activity = random_generator(list_one)
         what_to_see = input(f"would you like to {activity} as your activity? y/n ")
-        if what_to_see == ("y"):
+        if what_to_see == ("y") or ("Y"):
             break
         else:print("Okay lets try something else")
     product_one = activity
@@ -54,8 +54,8 @@ while (day_trip_planner):
     print(f"So your day trip is set to take place in {city}. We will get there via {transport}. We will be dining at {dining} tonight, and we are planning to {activity}.")
     confirm = input("Do you want to take this day trip? y/n ")
     for day_trip_planner in confirm:
-        if confirm == "y":
+        if confirm == ("y") or ("Y"):
             print("Thank you for using the day trip planner, enjoy your trip.")
             day_trip_planner = False
-        elif print( "ok lets try this again"):
+        elif print( "Okay, lets try this again"):
             break
