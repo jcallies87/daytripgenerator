@@ -19,14 +19,8 @@ while (day_trip_planner):
         else:
             print("Okay lets try somewhere else?")
     product_one = city
-    if city == ("Houston"):
-        resturants = ['Whataburger', 'Kings BBQ', 'Mamacitas', 'Killens BBQ']
-    elif city == ("Wichita"):
-        resturants = ['Hog Wild Pit BBQ', 'Bomber Burger', 'Spangles', 'Mexican Burrito', 'Villiage Inn']
-    elif city == ("Milwaukee"):
-        resturants = ['Kopps', 'Oscars Frozen Custard', 'AJ Bombers', 'Milwaukee Burger Co', 'George Webbs']
-    elif city == ("New York City"):
-        resturants = ['Grand Central Oyster Bar', 'Tavern on the Green', 'Rosas Pizza', 'CUT by Wolfgang Puck', 'Royal 35 Steakhouse']
+    
+    resturants = ['Whataburger', 'In-n-Out', 'Ruby Tuesdays', 'Buffalo Wild Wings']
     list_one = resturants
     while resturants:
         dining = random_generator(list_one)
@@ -47,15 +41,7 @@ while (day_trip_planner):
         else:print("Okay lets try something else")
     product_one = transport
 
-    if city == ("Houston"):
-        entertainment = ['vist Battleship Texas', 'tour cistern at Buffalo Bayou Park', 'play Top Golf', 'visit the Space Center' 'take a stroll on the Kemah Boardwalk']
-    elif city == ("Wichita"):
-        entertainment = ['attend a wingsnuts baseball game', 'walk down the riverwalk', 'dance at Club Rodeo', 'visit The Kansas Aviation Museum', 'visit The Sedgwick County Zoo']
-    elif city == ("Milwaukee"):
-        entertainment = ['tour The Harley Davidson Museum', 'attend a concert at The Eagles Ballroom', 'watch a Brewers game', 'go to the Milwaukee County Zoo', 'get lucky at Potawatomi Casino']
-    elif city == ("New York City"):
-        entertainment = ['go to the observation deck of The Empire State Bulding', 'take a carriage ride in Central Park', 'visit the 9/11 memorial', 'see a broadway show', 'go shopping on 5th avenue']
-    
+    entertainment = ['going to the zoo', 'attending a concert', 'visit the museum', 'watch a baseball game']
     list_one = entertainment
     while entertainment:
         activity = random_generator(list_one)
